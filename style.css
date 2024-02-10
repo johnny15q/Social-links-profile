@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
+
+/* Mobile: 375px
+   Desktop: 1440px */
+
+:root {
+    --clr-neutral-200: hsl(0, 0%, 100%);
+    --clr-neutral-400: hsl(0, 0%, 20%);
+    --clr-neutral-600: hsl(0, 0%, 12%);
+    --clr-neutral-800: hsl(0, 0%, 8%);
+    --clr-primary: hsl(75, 94%, 57%);
+
+    --fw-sm: 400;
+    --fw-med: 600;
+    --fw-lg: 700;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    border-radius: 50%;
+    margin: 3rem auto 1.25rem;
+}
+
+h1, h2, h3 {
+    text-align: center;
+    padding: .225rem 0;
+}
+
+body {
+    font-size: 1.125rem;
+    font-family: inter;
+    background-color: var(--clr-neutral-800);
+}
+
+.wrapper {
+    max-width: 15%;
+    margin: auto;
+    margin-top: 20rem;
+}
+
+.content {
+    padding:1.65rem ;
+    background-color: var(--clr-neutral-600);
+    border-radius: 10px;
+}
+
+.header {
+    margin-inline: auto;
+}
+
+.header img {
+    width: 90px;
+}
+
+.header h1 {
+    color: var(--clr-neutral-200);
+    font-weight: var(--fw-lg);
+    font-size: 1.6rem;
+}
+
+.header h2 {
+    color: var(--clr-primary);
+    font-weight: var(--fw-med);
+    font-size: .9rem;
+}
+
+.header p {
+    color: var(--clr-neutral-200);
+    padding: 1.25rem 0;
+    font-size: .9rem;
+    text-align: center;
+}
+
+.social-grid {
+    display: flex;
+    flex-direction: column;
+    margin-inline: auto;
+    gap: .8rem;
+    max-width: 78%;
+    padding: 1.2rem 0;
+}
+
+.social-btn {
+    background-color: var(--clr-neutral-400);
+    color: var(--clr-neutral-200);
+    padding: 1rem;
+    border-radius: 4px;
+    border: none;
+}
+
+button:hover {
+    background-color: var(--clr-primary);
+    color: var(--clr-neutral-600);
+    cursor: pointer;
+}
+
+@media (max-width: 1440px) {
+    .wrapper {
+        max-width: 45%;
+    }
+
+    .social-grid {
+        max-width: 95%;
+    }
+}
+
+@media (max-width: 375px) {
+    .wrapper {
+        max-width: 95%;
+    }
+
+    .social-grid {
+        max-width: 95%;
+    }
+}
